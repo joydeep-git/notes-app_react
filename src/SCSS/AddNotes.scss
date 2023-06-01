@@ -1,0 +1,50 @@
+.AddNotes {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        textarea{
+            text-align: left;
+            height: max-content;
+            padding: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        button{
+            padding: 0.5rem 0.8rem;
+            background: none;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1.2rem;
+
+            &:hover{
+                border-radius: 20px;
+                background-color: #000000;
+                color: white;
+                transition: 0.5s ease;
+            }
+        }
+    }
+
+}
+
+@media screen and ( max-width: 767px) {
+    
+    .AddNotes{
+        width: 85%;
+
+        form{
+            width: 100%;
+            
+            textarea{
+                width: 100%;
+            }
+        }
+    }
+}

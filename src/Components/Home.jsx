@@ -10,8 +10,6 @@ const Home = () => {
 
     const [notes, setNotes] = useState([]);
 
-    console.log(notes);
-
     return (
         <div className='Home'>
 
